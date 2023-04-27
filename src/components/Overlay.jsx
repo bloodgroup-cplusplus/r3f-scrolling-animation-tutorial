@@ -40,51 +40,51 @@ export const Overlay = () => {
       <div class="w-screen">
         <Section opacity={opacityFirstSection}>
           <h1 className="font-semibold font-serif text-2xl">
-            Hello, I'm Wawa Sensei
+            Welcome To Aviskar's Paying Guest
           </h1>
-          <p className="text-gray-500">Welcome to my beautiful portfolio</p>
-          <p className="mt-3">I know:</p>
+          <p className="text-gray-500">Welcome to our beautiful home</p>
+          <p className="mt-3">We offer:</p>
           <ul className="leading-9">
-            <li>🧑‍💻 How to code</li>
-            <li>🧑‍🏫 How to learn</li>
-            <li>📦 How to deliver</li>
+            <li>🏚 Spacious Rooms</li>
+            <li>🥗 Veg  and 🍗  Non-Veg Food  </li>
+            <li>👧🏻 Girls and 👦🏻 Boys PG  </li>
+            <li>📶 Wifi 24x7</li>
           </ul>
           <p className="animate-bounce  mt-6">↓</p>
         </Section>
         <Section right opacity={opacitySecondSection}>
           <h1 className="font-semibold font-serif text-2xl">
-            Here are my skillsets 🔥
+            We also offer 🔥
           </h1>
-          <p className="text-gray-500">PS: I never test</p>
+          <p className="text-gray-500"></p>
           <p className="mt-3">
-            <b>Frontend 🚀</b>
+            <b>Spacious Areas For Drying Clothes 🌞 </b>
+            <b> Hygenic Washrooms 🚽</b>
+            <b>24x7 Clean Water Facility 🚰</b>
+            <b>Homely Atmosphere 🏠 👨‍👩‍👧</b>
+          </p>
+          
+          <p className="mt-3">
+            <b>Rooms Starting at: </b>
           </p>
           <ul className="leading-9">
-            <li>ReactJS</li>
-            <li>React Native</li>
-            <li>VueJS</li>
-            <li>Tailwind</li>
-          </ul>
-          <p className="mt-3">
-            <b>Backend 🔬</b>
-          </p>
-          <ul className="leading-9">
-            <li>NodeJS</li>
-            <li>tRPC</li>
-            <li>NestJS</li>
-            <li>PostgreSQL</li>
+            <li>Rs 6500 per month (Shared Room)</li>
+            <li>Rs 7500 per month (Individual Room)</li>
           </ul>
           <p className="animate-bounce  mt-6">↓</p>
         </Section>
         <Section opacity={opacityLastSection}>
           <h1 className="font-semibold font-serif text-2xl">
-            🤙 Call me maybe?
+             Limited Rooms Available 😱 Contact Us ASAP 📱
           </h1>
           <p className="text-gray-500">
-            I'm very expensive but you won't regret it
+
+            Near SMIMS College 
+            5th Mile Tadong 
+            Gangtok East Sikkim 
           </p>
           <p className="mt-6 p-3 bg-slate-200 rounded-lg">
-            📞 <a href="tel:(+42) 4242-4242-424242">(+42) 4242-4242-424242</a>
+            📞 <a href="tel:9382114563 ">(+91) 9382114563</a>
           </p>
         </Section>
       </div>
