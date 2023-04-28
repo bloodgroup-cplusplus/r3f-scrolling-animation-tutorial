@@ -27,12 +27,12 @@ export const Overlay = () => {
   const scroll = useScroll();
   const [opacityFirstSection, setOpacityFirstSection] = useState(1);
   const [opacitySecondSection, setOpacitySecondSection] = useState(1);
-  const [opacityLastSection, setOpacityLastSection] = useState(1);
+  const [opacityThirdSection, setOpacityThirdSection] = useState(1);
 
   useFrame(() => {
     setOpacityFirstSection(1 - scroll.range(0, 1 / 3));
     setOpacitySecondSection(scroll.curve(1 / 3, 1 / 3));
-    setOpacityLastSection(scroll.range(2 / 3, 1 / 3));
+    setOpacityThirdSection(scroll.range(2 / 3, 1 / 3));
   });
 
   return (
@@ -46,36 +46,41 @@ export const Overlay = () => {
           <p className="mt-3">We offer:</p>
           <ul className="leading-9">
             <li>🏚 Spacious Rooms</li>
-            <li>🥗 Veg  and 🍗  Non-Veg Food  </li>
+            <li>🥗 Veg  and 🍗  Non-Veg Food   </li>
             <li>👧🏻 Girls and 👦🏻 Boys PG  </li>
             <li>📶 Wifi 24x7</li>
+            <li>🧺 Washing Machine and Laundry</li>
+            <li>🚽 Hygenic Washrooms</li>
+            <li>🚰 24x7 Water Facility</li>
+            <li>🌞 Open areas for drying clothes</li>
+            <li>⏳ 7+ Years of Experience</li>
           </ul>
           <p className="animate-bounce  mt-6">↓</p>
         </Section>
         <Section right opacity={opacitySecondSection}>
           <h1 className="font-semibold font-serif text-2xl">
-            We also offer 🔥
+            Our Testimonials 🔥
           </h1>
           <p className="text-gray-500"></p>
           <p className="mt-3">
-            <b>Spacious Areas For Drying Clothes 🌞 </b>
-            <b> Hygenic Washrooms 🚽</b>
-            <b>24x7 Clean Water Facility 🚰</b>
-            <b>Homely Atmosphere 🏠 👨‍👩‍👧</b>
-          </p>
-          
+            <b>👋🏻 Hi I'm Nipun Subba a doctor 🩺 here at Gangtok Government Hospital </b>
+            <b>I stayed at Aviskar PG For 4 Years while pursuing my MBBS</b>
+            <b>The great ambience of the PG with Homely Staff helped me a lot during my stay there</b>
+            <b>Even during tough times of covid-19 the staff left no stone unturned in providing us with best facilities to carry on with our degree. I highly recommend Aviskar PG</b>
+            <b>⭐️⭐️⭐️⭐️⭐️</b>
+          </p> 
+        </Section>
+
+        <Section opacity={opacityThirdSection}>
           <p className="mt-3">
-            <b>Rooms Starting at: </b>
+            <h1 className="font-semibold font-serif text-2xl"> Rooms Starting at:</h1>
           </p>
           <ul className="leading-9">
-            <li>Rs 6500 per month (Shared Room)</li>
-            <li>Rs 7500 per month (Individual Room)</li>
+            <li> Rs 6500 per month( Shared Room)</li>
+            <li> Rs 7500 per month (Individual Room)</li>
           </ul>
-          <p className="animate-bounce  mt-6">↓</p>
-        </Section>
-        <Section opacity={opacityLastSection}>
           <h1 className="font-semibold font-serif text-2xl">
-             Limited Rooms Available 😱 Contact Us ASAP 📱
+             Limited Rooms Available 😱 Contact Us 📞
           </h1>
           <p className="text-gray-500">
 
@@ -87,6 +92,10 @@ export const Overlay = () => {
             📞 <a href="tel:9382114563 ">(+91) 9382114563</a>
           </p>
         </Section>
+
+
+
+
       </div>
     </Scroll>
   );
